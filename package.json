@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/mingcute": "^1.1.16",
+    "@iconify/tailwind": "^0.1.4",
     "tailwindcss": "^3.4.1"
   }
 }

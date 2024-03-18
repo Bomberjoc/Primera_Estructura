@@ -24,16 +24,17 @@ const items = [
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<link rel="icon" type="image/png" href="/Aliexpress_icon.png">
 		<title>{title}</title>
 	</head>
 	<body>
+		<!-- Primera Barra -->
 		<div class="bg-zinc-800">
-			<div class="flex items-center">
-				<img src="../../public/aliexpress_logo.WEBP" alt="" class="h-16 ml-20">
-				<button class="rounded-full bg-slate-600 h-[50%] p-1 mr-5">
-					<img src="../../public/menu.svg" alt="">
-				</button>
+			<div class="flex items-center justify-evenly pr-10">
+				<!-- Logo  -->
+				<img src="../../public/aliexpress_logo.WEBP" alt="Logo_AliExpress" class="h-16 ml-20">
+				<!-- Barra de busqueda -->
 				<div class="flex bg-white rounded-full relative w-2/4">
 					<input type="search" placeholder="iphone 12 pro max" class="h-9 rounded-full  p-5 pr-10 outline-none" />
 					<button class=" rounded-full bg-black m-1 top-[2px] right-1 absolute inline-block px-3 text-white p-1">
@@ -44,30 +45,50 @@ const items = [
 				</div>
 				<div class="flex text-white items-center ml-8 cursor-pointer">
 					<Icon name="mdi:qrcode" class="size-8  mr-1"/>
-					<p class="w-20 text-xs">Download the AliExpress app</p>
+					<p class="w-24 text-xs">Descarga la app de AliExpress</p>
 				</div>
-				<div class="flex text-white items-center ml-8 cursor-pointer">
+				<div class="flex text-white items-center  cursor-pointer">
 					<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 36 36" {...props} class="mr-1 size-6">
 						<path fill="#fbd116" d="M32 5H4a4 4 0 0 0-4 4v9h36V9a4 4 0 0 0-4-4" />
 						<path fill="#22408c" d="M0 18h36v7H0z" />
 						<path fill="#ce2028" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-2H0z" />
 					</svg>
-					<p class="w-px text-xs">EN/ COP</p>
-					
-				</div>
-				<div class="flex text-white items-center ml-12 cursor-pointer">
-					<Icon name="mdi:person-outline" class="size-8 mr-1"/>
-					<div class="w-28">
-						<p class="text-xs">Welcome</p>
-						<strong class="text-xs ">Sign in / Register</strong>
+					<div class="w-px leading-3">
+						<p class="text-xs">ES/</p>
+						<strong class="text-xs ">COP</strong>
 					</div>
 				</div>
+				<div class="flex text-white items-center ml-8 cursor-pointer">
+					<Icon name="mdi:person-outline" class="size-10 mr-1"/>
+					<div class="w-40 leading-3">
+						<p class="text-xs">¡Bienvenido</p>
+						<strong class="text-xs ">Identifícate / Regístrate</strong>
+					</div>
+				</div>
+				<div class="flex text-white items-center ml-1 cursor-pointer">
+					<Icon name="mingcute:shopping-cart-1-line" class='size-8 mr-1' />
+					<div class="flex-col justify-center w-8">
+						<div class="bg-white w-6 h-7/3 flex justify-center text-xs rounded-2xl text-black">
+							<strong>0</strong>
+						</div>
+						<strong class="text-xm">
+							Cesta
+						</strong>
+					</div>
+				</div>	
 			</div>
-			
 		</div>
-		<div class=" banner">
-			BANNER
+
+		<!-- Segunda Barra -->
+		<div class="bg-zinc-800">
+			<!-- Boton de categorías -->
+			<button class="rounded-full bg-slate-600 h-[50%] p-1 mr-5">
+				<img src="../../public/menu.svg" alt="">
+			</button>
 		</div>
+
+		
+
 		<nav class=" main_menu">
 			<a href="/">Inicio</a> <a href="/productos">Productos</a> <a href="/ofertas">Ofertas</a>
 		</nav>
