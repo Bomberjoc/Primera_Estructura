@@ -30,7 +30,7 @@ const items = [
 	</head>
 	<body>
 		<!-- Primera Barra -->
-		<div class="bg-zinc-800">
+		<div class="bg-black">
 			<div class="flex items-center justify-evenly pr-10">
 				<!-- Logo  -->
 				<img src="../../public/aliexpress_logo.WEBP" alt="Logo_AliExpress" class="h-16 ml-20">
@@ -74,24 +74,39 @@ const items = [
 						<strong class="text-xm">
 							Cesta
 						</strong>
+						
 					</div>
 				</div>	
 			</div>
 		</div>
 
 		<!-- Segunda Barra -->
-		<div class="bg-zinc-800">
-			<!-- Boton de categorías -->
-			<button class="rounded-full bg-slate-600 h-[50%] p-1 mr-5">
-				<img src="../../public/menu.svg" alt="">
-			</button>
+		<div class="bg-black flex text-white p-2">
+			<div class="flex ml-40 border-white border-solid border rounded-full items-center">
+				<a class="h-10 flex relative text-lg text-center group px-4 bg-black rounded-full items-center" href="#">
+					<img src="../../public/menu.svg" alt="" class="mr-2">
+					Todas las categorías
+					<menu class="hidden group-hover:block w-full left-0 absolute top-0 rounded-2xl bg-slate-100 text-black shadow-md border-slate-100">
+						<div class="flex h-10 px-3 items-center font-semibold">
+							<img src="../../public/menu_black.svg" alt="" class="mr-2">
+							<p>Todas las categorías</p>
+						</div>
+						<ul>
+							<li>opcion 1</li>
+							<li>opcion 2</li>
+							<li>opcion 3</li>
+						</ul>
+					</menu>
+				</a>
+				<!-- Boton de categorías -->
+				
+			</div>
+			
 		</div>
 
 		
 
-		<nav class=" main_menu">
-			<a href="/">Inicio</a> <a href="/productos">Productos</a> <a href="/ofertas">Ofertas</a>
-		</nav>
+		
 		<div class=" items">
 			<!-- {
 				items.map((item) =><div>
