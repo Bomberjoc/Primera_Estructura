@@ -28,7 +28,7 @@ const items = [
 		<link rel="icon" type="image/png" href="/Aliexpress_icon.png">
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="grid">
 		<!-- Primera Barra -->
 		<div class="bg-black">
 			<div class="flex items-center justify-evenly pr-10">
@@ -53,22 +53,29 @@ const items = [
 						<path fill="#22408c" d="M0 18h36v7H0z" />
 						<path fill="#ce2028" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-2H0z" />
 					</svg>
-					<div class="w-px leading-3">
+					<div class="w-12 leading-3">
 						<p class="text-xs">ES/</p>
-						<strong class="text-xs ">COP</strong>
+						<div class="flex">
+							<strong class="text-xs ">COP</strong>
+							<Icon name="material-symbols:keyboard-arrow-down" class='size-5'/>
+						</div>
 					</div>
 				</div>
-				<div class="flex text-white items-center ml-8 cursor-pointer">
+				<div class="flex text-white items-center  cursor-pointer">
 					<Icon name="mdi:person-outline" class="size-10 mr-1"/>
 					<div class="w-40 leading-3">
 						<p class="text-xs">¡Bienvenido</p>
-						<strong class="text-xs ">Identifícate / Regístrate</strong>
+						<div class="flex">
+							<strong class="text-xs ">Identifícate / Regístrate</strong>
+							<Icon name="material-symbols:keyboard-arrow-down" class="size-5" />
+						</div>
+						
 					</div>
 				</div>
 				<div class="flex text-white items-center ml-1 cursor-pointer">
 					<Icon name="mingcute:shopping-cart-1-line" class='size-8 mr-1' />
 					<div class="flex-col justify-center w-8">
-						<div class="bg-white w-6 h-7/3 flex justify-center text-xs rounded-2xl text-black">
+						<div class="bg-white w-6  flex justify-center text-xs rounded-2xl text-black">
 							<strong>0</strong>
 						</div>
 						<strong class="text-xm">
@@ -81,29 +88,89 @@ const items = [
 		</div>
 
 		<!-- Segunda Barra -->
-		<div class="bg-black flex text-white p-2">
-			<div class="flex ml-40 border-white border-solid border rounded-full items-center">
-				<a class="h-10 flex relative text-lg text-center group px-4 bg-black rounded-full items-center" href="#">
-					<img src="../../public/menu.svg" alt="" class="mr-2">
-					Todas las categorías
-					<menu class="hidden group-hover:block w-full left-0 absolute top-0 rounded-2xl bg-slate-100 text-black shadow-md border-slate-100">
-						<div class="flex h-10 px-3 items-center font-semibold">
-							<img src="../../public/menu_black.svg" alt="" class="mr-2">
-							<p>Todas las categorías</p>
-						</div>
-						<ul>
-							<li>opcion 1</li>
-							<li>opcion 2</li>
-							<li>opcion 3</li>
+		<div class="bg-black flex text-white p-2 justify-around w-full py-3">
+
+			<div class="flex align-middle text-center items-center justify-between w-9/12 ">
+				<!-- Boton de categorías -->
+				<div class="flex border-white border-solid border justify-start rounded-full items-center">
+					<a class="h-10 flex relative text-lg text-center group px-4 bg-black rounded-full items-center" href="#">
+						<img src="../../public/menu.svg" alt="" class="mr-2">
+						Todas las categorías
+						<Icon name="material-symbols:keyboard-arrow-down" class="size-5 ml-3" />
+						<menu class="hidden group-hover:block w-full left-0 absolute top-0 rounded-2xl bg-slate-100 text-black shadow-md border-slate-100">
+							<div class="flex h-10 px-3 items-center font-semibold">
+								<img src="../../public/menu_black.svg" alt="" class="mr-2">
+								<p>Todas las categorías</p>
+								<Icon name="material-symbols:keyboard-arrow-up" class='size-5 ml-3' />
+							</div>
+							<ul>
+								<li>opcion 1</li>
+								<li>opcion 2</li>
+								<li>opcion 3</li>
+							</ul>
+						</menu>
+					</a>
+				</div>
+				<div class="flex cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						NN
+					</p>
+				</div>
+				<div class="flex cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Superventas
+					</p>
+				</div>
+				<div class="flex cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Mejores Marcas
+					</p>
+				</div>
+				<div class="flex  cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Hogar y jardín
+					</p>
+				</div>
+				<div class="flex cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Cabello y pelucas
+					</p>
+				</div>
+				<div class="flex  cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Moda Hombre
+					</p>
+				</div>
+				<div class="flex  cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Accesorios
+					</p>
+				</div>
+				<div class="flex  cursor-pointer hover:bg-gray-500 rounded-3xl h-full items-center px-4">
+					<p class="text-base ">
+						Electrónica
+					</p>
+				</div>
+				<div class="flex items-center group relative cursor-pointer hover:bg-gray-500 rounded-3xl h-full my-1 px-4">
+					<p class="text-base ">
+						Más
+					</p>
+					<Icon name="material-symbols:keyboard-arrow-down" class="size-5" />
+					<menu class="hidden group-hover:block w-44 h-36 left-0 absolute top-10 rounded-2xl text-sm bg-white text-black shadow-md border-white">
+						<ul class="flex flex-col justify-around px-2 h-full">
+							<li>Hogar e iluminación</li>
+							<li>Electrodo-mésticos</li>
+							<li>Motor</li>
 						</ul>
 					</menu>
-				</a>
-				<!-- Boton de categorías -->
+				</div>
 				
 			</div>
 			
 		</div>
-
+		<div class="flex justify-center">
+			<img src="3rbannerAE.webp" alt="" class="h-28 my-5">
+		</div>
 		
 
 		
